@@ -41,3 +41,38 @@ Go to the GitHub page and click releases.
 
 * Go to the GitHub page and select the draft release and click ‘edit’ and then ‘publish release’
 
+## Apply Updates
+
+Auto updater CheckforUpdate() method is being called in the application start to check whether there is an update.  Once the updates are deployed in GitHub, user will get notified when open the application. This is achieved using autoUpdater API events.
+
+### Auto Updater Events
+
+The autoUpdater object emits the following events:
+
+Event: 'error'
+Returns:
+error Error
+Emitted when there is an error while updating.
+
+Event: 'checking-for-update'
+Emitted when checking if an update has started.
+
+Event: 'update-available'
+Emitted when there is an available update. The update is downloaded automatically.
+
+Event: 'update-not-available'
+Emitted when there is no available update.
+
+Event: 'update-downloaded'
+Returns:
+event Event
+releaseNotes String
+releaseName String
+releaseDate Date
+updateURL String
+Emitted when an update has been downloaded.
+
+On Windows only releaseName is available.
+
+Event: 'before-quit-for-update'
+This event is emitted after a user calls quitAndInstall().
