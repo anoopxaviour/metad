@@ -19,6 +19,7 @@ win:
 nsisWeb:
     differentialPackage: true
     
+    
 target can be either nsis(installer) or nsis-web(web installer). web installer is a small setup which downloads the remaining components after it is run. 
 
 ## Publish 
@@ -33,4 +34,5 @@ Once the application is ready to publish, edit the version field in the package.
 `npm run ship`
 
 Go to the GitHub page and select the draft release and click ‘edit’ and then ‘publish release’
+
 ![GitHubReleases](github_releases.png?raw=true "GitHubReleases")
