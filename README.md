@@ -13,11 +13,8 @@ Update the repository in the package.json file `"repository": "https://github.co
 appId: metadataeditor
 
 publish:
-
-    provider: github
-    
-    token: <access-tocken>
-    
+    provider: github    
+    token: <access-tocken>    
 win:
 
     target: nsis-web
