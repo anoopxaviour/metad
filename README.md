@@ -10,6 +10,7 @@ Update the repository in the package.json file `"repository": "https://github.co
 
 ## Required builder configuration settings(electron-builder.yml)
 
+```sh
 appId: metadataeditor
 publish:
     provider: github    
@@ -18,7 +19,7 @@ win:
     target: nsis-web    
 nsisWeb:
     differentialPackage: true
-    
+```
     
 target can be either nsis(installer) or nsis-web(web installer). web installer is a small setup which downloads the remaining components after it is run. 
 
