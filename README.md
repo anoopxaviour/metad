@@ -4,7 +4,7 @@ Metadata Editor installer includes an automaic updater that can check for, downl
 
 ## Set up the repository
 
-For Metadata Editor, we used GitHub as a host and electron builder needs a GitHub access token to publish the application. Reference link to create the access token https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/.
+For Metadata Editor, we used GitHub as a host. Electron builder needs a GitHub access token to publish the application. Reference link to create the access token https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/.
 
 ## Update repository in package.json
 `"repository": "https://github.com/UserName/RepoName" `.
