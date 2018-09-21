@@ -1,12 +1,13 @@
 # Metadata Editor – Automatic Updates
 
-Automatic update system will check for the latest releases and update the application. For Metadata Editor we have set up an auto-updater using GitHub as a host.
+Metadata Editor installer includes an automaic updater that can check for, download and install updates. Metadata Editor is packaged with electron builder and used electron-updater module which allows update from GitHub or any other static file host.
 
 ## Set up the repository
 
-Electron builder needs a GitHub access token to publish the application. Reference link to create the access token https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/.
+For Metadata Editor, we used GitHub as a host and electron builder needs a GitHub access token to publish the application. Reference link to create the access token https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/.
 
-Update the repository in the package.json file `"repository": "https://github.com/UserName/RepoName" `.
+## Update repository in package.json
+`"repository": "https://github.com/UserName/RepoName" `.
 
 ## Required builder configuration settings(electron-builder.yml)
 
@@ -21,13 +22,15 @@ nsisWeb:
     differentialPackage: true
 ```
     
-target can be either nsis(installer) or nsis-web(web installer). web installer is a small setup which downloads the remaining components after it is run. 
+target can be either nsis(installer) or nsis-web(web installer). web installer is a small setup which downloads the remaining components after it is run. Please see the link https://www.itechtics.com/offlinestandalone-installer-vs-webonline-installer-advantages-disadvantages/ for detailed explanation.
 
 ## Publish 
 
 Electron builder will package and publish the application. Add the script `ship": "build --win -p always" ` to build and publish the application
 
 ### GitHub release workflow
+
+![GitHubReleases](github_releases.png?raw=true "GitHubReleases")
 
 Go to the GitHub page and click releases. 
 
@@ -39,4 +42,3 @@ Once the application is ready to publish, edit the version field in the package.
 
 Go to the GitHub page and select the draft release and click ‘edit’ and then ‘publish release’
 
-![GitHubReleases](github_releases.png?raw=true "GitHubReleases")
