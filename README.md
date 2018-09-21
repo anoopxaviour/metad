@@ -11,14 +11,10 @@ Update the repository in the package.json file `"repository": "https://github.co
 ## Required builder configuration settings(electron-builder.yml)
 
 appId: metadataeditor
-
 publish:
     provider: github    
     token: <access-tocken>    
 win:
-
-    target: nsis-web
-    
+    target: nsis-web    
 nsisWeb:
-
     differentialPackage: true
