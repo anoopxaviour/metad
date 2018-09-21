@@ -30,8 +30,7 @@ Electron builder will package and publish the application. Add the script `ship"
 Go to the GitHub page and click releases. Draft a new release – Set the “Tag version” to the application version and prefixed it with “v”. eg: v1.0.0
 
 Once the application is ready to publish, edit the version field in the package.json and run the following command.
-```bash
-npm run ship```
+`npm run ship`
 
 Go to the GitHub page and select the draft release and click ‘edit’ and then ‘publish release’
 ![GitHubReleases](github_releases.png?raw=true "GitHubReleases")
