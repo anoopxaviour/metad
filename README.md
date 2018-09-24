@@ -76,3 +76,7 @@ On Windows only releaseName is available.
 
 Event: 'before-quit-for-update'
 This event is emitted after a user calls quitAndInstall().
+
+## TO DO
+
+Differential Update - 
